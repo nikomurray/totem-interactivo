@@ -50,7 +50,9 @@ const Totem3D: React.FC = () => {
         {/* The Screen (UI Simulation) */}
         <div className="w-[94%] h-[92%] bg-black rounded-lg relative overflow-hidden flex flex-col">
           
-         
+          {/* Top Camera Notch */}
+          <div className="h-8">
+          </div>
 
           {/* Interactive UI Display */}
           <div className="flex-1 p-4 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 flex flex-col gap-4">
@@ -90,7 +92,7 @@ const Totem3D: React.FC = () => {
 
             {/* Main Center Button */}
             <div className="mt-2 h-16 w-full bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 relative overflow-hidden">
-               <span className="text-slate-950 font-black text-xs uppercase tracking-tighter">Comenzar Experiencia</span>
+               <a href="https://www.adinnov.com.ar/" target='_blank' className="text-slate-950 font-black text-xs uppercase tracking-tighter">Comenzar Experiencia</a>
                <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[45deg] animate-[shimmer_3s_infinite]" />
             </div>
           </div>
@@ -103,14 +105,13 @@ const Totem3D: React.FC = () => {
         </div>
 
         {/* Home Button / Sensor Area */}
-        <div className="h-20 flex items-center justify-center">
-  
+        <div className="h-20">
         </div>
       </div>
 
       {/* Floor Base */}
       <div 
-        className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[180%] bg-slate-900 border border-slate-700/50 rounded-full blur-[40px] opacity-60"
+        className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[180%] h-4 bg-slate-900 border border-slate-700/50 rounded-full blur-[40px] opacity-60"
         style={{ transform: 'rotateX(90deg) translateZ(-200px)' }}
       />
       
