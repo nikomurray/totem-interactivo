@@ -50,10 +50,7 @@ const Totem3D: React.FC = () => {
         {/* The Screen (UI Simulation) */}
         <div className="w-[94%] h-[92%] bg-black rounded-lg relative overflow-hidden flex flex-col">
           
-          {/* Top Camera Notch */}
-          <div className="h-8 flex items-center justify-center">
-            <div className="w-2 h-2 rounded-full bg-slate-800" />
-          </div>
+         
 
           {/* Interactive UI Display */}
           <div className="flex-1 p-4 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 flex flex-col gap-4">
@@ -106,14 +103,14 @@ const Totem3D: React.FC = () => {
         </div>
 
         {/* Home Button / Sensor Area */}
-        <div className="h-10 flex items-center justify-center">
-            <div className="w-8 h-1 bg-slate-800 rounded-full" />
+        <div className="h-20 flex items-center justify-center">
+  
         </div>
       </div>
 
       {/* Floor Base */}
       <div 
-        className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[180%] h-4 bg-slate-900 border border-slate-700/50 rounded-full blur-[40px] opacity-60"
+        className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-[180%] bg-slate-900 border border-slate-700/50 rounded-full blur-[40px] opacity-60"
         style={{ transform: 'rotateX(90deg) translateZ(-200px)' }}
       />
       
